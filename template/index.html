@@ -1,0 +1,18 @@
+<head>
+    <title>Twitter</title>
+</head>
+<body>
+<h1 style="text-align:center;"> Auto Tweet Bot </h1>
+
+
+<form method="post">
+{% csrf_token %}
+<label><b>Enter Tweet</b></label>
+<input type="text" placeholder="Tweet" name="tweet" size="70">
+<br><br>
+<label><b>Enter Time</b></label>
+<input type="time" placeholder="Time" name="time">
+    <button type="submit"> Tweet </button>
+</form>
+
+</body>
